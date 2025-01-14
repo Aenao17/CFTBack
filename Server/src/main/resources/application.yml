@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: Server
+  profiles:
+    active:
+      - database
+
+springdoc.swagger-ui.enable: true
