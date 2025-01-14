@@ -31,6 +31,8 @@ public class SecurityConfiguration {
             "/api/users/logout",
             "/api/users",
             "/api/users/token/**",
+            "/api/form",
+            "/api/form/**",
             "/v2/api-docs",
             "/v3/api-docs",
             "/v3/api-docs/**",
