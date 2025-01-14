@@ -56,6 +56,7 @@ public class FormService {
     public Integer getScore(List<String> responses){
         Integer score = 0;
         makeForm();
+
         for(int i = 0; i < responses.size(); i++){
             for(int j = 0; j < form.get(i).getResponses().size(); j++){
                 if(responses.get(i).equals(form.get(i).getResponses().get(j).getResponse())){
