@@ -11,3 +11,12 @@ create TABLE Users(
     email VARCHAR(255) NOT NULL UNIQUE,
     score BIGINT NOT NULL
 )
+
+-- Create table for tokens
+CREATE TABLE Token (
+                       id BIGINT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+                       token_type VARCHAR(255) NOT NULL,
+                       revoked BOOLEAN NOT NULL,
+                       expired BOOLEAN NOT NULL,
+                       user_id BIGINT NOT NULL REFERENCES Userr(id) ON DELETE CASCADE
+);
