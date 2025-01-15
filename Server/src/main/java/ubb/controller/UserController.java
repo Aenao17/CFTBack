@@ -39,6 +39,13 @@ public class UserController {
                 .orElse(ResponseEntity.notFound().build());
     }
 
+    @GetMapping("/u/{username}")
+    public ResponseEntity<User> getUserByUsername(@PathVariable String username) {
+        return userService.findByUsername(username)
+                .map(ResponseEntity::ok)
+                .orElse(ResponseEntity.notFound().build());
+    }
+
     @PostMapping
     public User createUser(@RequestBody User user) {
         return userService.saveUser(user);

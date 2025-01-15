@@ -39,6 +39,9 @@ public class UserService {
     public Optional<User> login(UserLoginDTO user) {
         return userRepository.findByUsernameAndPassword(user.getUsername(), user.getPassword());
     }
+    public Optional<User> findByUsername(String username) {
+        return userRepository.findByUsername(username);
+    }
 
     public User createUserFromDTO(UserRegisterDTO userDTO) {
         User user = new User();

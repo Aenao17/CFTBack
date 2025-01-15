@@ -24,8 +24,8 @@ public class FormController {
         return ResponseEntity.ok(formService.getForm());
     }
 
-    @PostMapping
-    public ResponseEntity<Integer> postForm(@RequestBody List<String> responses){
-        return ResponseEntity.ok(formService.getScore(responses));
+    @PostMapping("/{id}")
+    public ResponseEntity<Integer> postForm(@PathVariable Long id, @RequestBody List<String> responses){
+        return ResponseEntity.ok(formService.saveUserResponse(id, responses));
     }
 }

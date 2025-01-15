@@ -1,8 +1,11 @@
 package ubb.service;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import ubb.model.Form;
 import ubb.model.Question;
 import ubb.model.Response;
+import ubb.repository.FormRepository;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -14,6 +17,12 @@ import java.util.Scanner;
 @Service
 public class FormService {
     private List<Question> form;
+    private final FormRepository formRepository;
+
+    @Autowired
+    public FormService(FormRepository formRepository){
+        this.formRepository = formRepository;
+    }
 
     public void makeForm(){
         File file = new File("C:\\Users\\Master\\Desktop\\internship\\backend\\Server\\src\\main\\resources\\form.txt");
@@ -65,6 +74,16 @@ public class FormService {
                 }
             }
         }
+        return score;
+    }
+
+    public Integer saveUserResponse(Long id, List<String> responses){
+        Form form = new Form();
+        form.setUserId(id);
+        form.setAnswers(responses.toString());
+        Integer score = getScore(responses);
+        form.setScore(score);
+        formRepository.save(form);
         return score;
     }
 

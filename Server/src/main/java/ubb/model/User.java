@@ -40,6 +40,10 @@ public class User implements UserDetails {
     @JsonIgnore
     private List<Token> tokens;
 
+    @OneToMany(mappedBy = "userId")
+    @JsonIgnore
+    private List<Form> forms;
+
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return null;

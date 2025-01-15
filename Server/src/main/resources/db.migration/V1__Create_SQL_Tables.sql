@@ -21,3 +21,10 @@ CREATE TABLE Token (
                        user_id BIGINT NOT NULL REFERENCES Users(id) ON DELETE CASCADE
 );
 
+-- Create table for forms
+CREATE TABLE Forms (
+                      id BIGINT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+                      score BIGINT NOT NULL,
+                      anwsers VARCHAR(1000) NOT NULL,
+                      user_id BIGINT NOT NULL REFERENCES Users(id) ON DELETE CASCADE
+);
