@@ -21,7 +21,7 @@ public class FormController {
     @GetMapping
     public ResponseEntity<List<Question>> getForm(){
         formService.makeForm();
-        return ResponseEntity.ok(formService.getForm());
+        return ResponseEntity.ok(formService.getFormular());
     }
 
     @PostMapping("/{id}")

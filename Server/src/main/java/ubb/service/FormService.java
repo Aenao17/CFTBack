@@ -6,6 +6,7 @@ import ubb.model.Form;
 import ubb.model.Question;
 import ubb.model.Response;
 import ubb.repository.FormRepository;
+import ubb.repository.UserRepository;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -18,10 +19,12 @@ import java.util.Scanner;
 public class FormService {
     private List<Question> form;
     private final FormRepository formRepository;
+    private final UserRepository userRepository;
 
     @Autowired
-    public FormService(FormRepository formRepository){
+    public FormService(FormRepository formRepository, UserRepository userRepository){
         this.formRepository = formRepository;
+        this.userRepository = userRepository;
     }
 
     public void makeForm(){
@@ -58,7 +61,7 @@ public class FormService {
         }
     }
 
-    public List<Question> getForm(){
+    public List<Question> getFormular(){
         return form;
     }
 
@@ -84,6 +87,12 @@ public class FormService {
         Integer score = getScore(responses);
         form.setScore(score);
         formRepository.save(form);
+        userRepository.findById(id).ifPresent(user -> {
+            if(user.getScore()>score) {
+                user.setScore(score);
+                userRepository.save(user);
+            }
+        });
         return score;
     }
 

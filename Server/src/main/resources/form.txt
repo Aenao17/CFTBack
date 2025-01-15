@@ -11,3 +11,77 @@ Of the food you buy, how much is wasted and thrown away?
 20@0%-10%
 30@10%-30%
 40@More than 30%
+What kind of vehicle do you travel in most often as a driver or passenger?
+5
+50@Car
+40@Motorbike
+30@Bus
+10@Bike
+5@I walk
+How often do you take the bus?
+3
+5@Every day
+10@3-5 times a week
+20@1-2 times a week
+What kind of house do you live in?
+3
+30@Detached
+20@Semi-detached
+10@Studio
+How many rooms does your house have?
+4
+40@More than 10 rooms (impressive :) )
+30@6-9 rooms
+20@3-6 rooms
+10@1-3 rooms
+How many people live in your house?
+6
+10@More than 5
+20@5
+30@4
+40@3
+50@2
+60@1
+How do you heat your home?
+5
+10@Heatpump
+20@Wood
+30@Electricity
+40@Gas
+50@Oil
+How warm do you keep your home in winter?
+4
+50@More than 24 Celsius
+40@22-24 Celsius
+20@18-21 Celsius
+10@14-17 Celsius
+In the last 12 months, have you bought any of these new household items? TV, laptop, or fridge?
+2
+20@Yes
+10@No
+In a typical month, how much do you spend on clothes and footwear?
+4
+40@More than 300 lei
+30@150-300 lei
+20@1-150 lei
+10@0 lei
+How much do you spend on your pets and their food?
+4
+40@More than 200 lei
+30@50-200 lei
+20@1-50 lei
+10@I don’t have a pet
+In a typical month, how much do you spend on health?
+3
+30@More than 200 lei
+20@50-200 lei
+10@0-50 lei
+In a typical month, how much do you spend on your hobbies? (sports, gym, cinema, books, entertainment, computer games, etc.)
+3
+30@More than 300 lei
+20@50-300 lei
+10@0-50 lei
+Do you recycle food, paper, glass, plastic, etc.?
+2
+20@No
+10@Yes

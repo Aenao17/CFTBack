@@ -5,6 +5,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import ubb.auth.AuthenticationRequest;
 import ubb.auth.AuthenticationResponse;
+import ubb.model.DTO.LeaderboardDTO;
 import ubb.model.DTO.UserLoginDTO;
 import ubb.model.DTO.UserRegisterDTO;
 import ubb.model.Token;
@@ -44,6 +45,11 @@ public class UserController {
         return userService.findByUsername(username)
                 .map(ResponseEntity::ok)
                 .orElse(ResponseEntity.notFound().build());
+    }
+
+    @GetMapping("/leaderboard")
+    public ResponseEntity<List<LeaderboardDTO>> getLeaderboard() {
+        return ResponseEntity.ok(userService.getLeaderboard());
     }
 
     @PostMapping

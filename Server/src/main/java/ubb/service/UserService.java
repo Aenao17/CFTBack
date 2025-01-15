@@ -2,6 +2,7 @@ package ubb.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import ubb.model.DTO.LeaderboardDTO;
 import ubb.model.DTO.UserLoginDTO;
 import ubb.model.DTO.UserRegisterDTO;
 import ubb.model.User;
@@ -50,5 +51,14 @@ public class UserService {
         user.setEmail(userDTO.getEmail());
         user.setScore(0);
         return user;
+    }
+
+    public List<LeaderboardDTO> getLeaderboard() {
+        List<User> users = userRepository.findAll();
+        List<LeaderboardDTO> leaderboard = new ArrayList<>();
+        for (User user : users) {
+            leaderboard.add(new LeaderboardDTO(user.getUsername(), user.getScore()));
+        }
+        return leaderboard;
     }
 }
