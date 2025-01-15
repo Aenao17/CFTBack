@@ -2,7 +2,7 @@ spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/carbon
     username: postgres
-    password: 17072003
+    password: qwer
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate.ddl-auto: update

@@ -28,7 +28,7 @@ public class FormService {
     }
 
     public void makeForm(){
-        File file = new File("C:\\Users\\Master\\Desktop\\internship\\backend\\Server\\src\\main\\resources\\form.txt");
+        File file = new File("C:\\Users\\flore\\OneDrive\\Documents\\GitHub\\PracticaBack\\Server\\src\\main\\resources\\form.txt");
         // read from file and create the form
         if (file.exists()) {
             try{
@@ -88,7 +88,10 @@ public class FormService {
         form.setScore(score);
         formRepository.save(form);
         userRepository.findById(id).ifPresent(user -> {
-            if(user.getScore()>score) {
+            if(user.getScore()==0) {
+                user.setScore(score);
+                userRepository.save(user);
+            }else if(user.getScore()<score){
                 user.setScore(score);
                 userRepository.save(user);
             }
