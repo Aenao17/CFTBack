@@ -1,11 +1,87 @@
-What is love?
-3
-1@Baby don't hurt me
-2@Don't hurt me
-3@No more
-In the jungle, the mighty jungle
+How would you best describe your diet?
+5
+1@Meat every day
+2@Meat at some meals
+3@Meat very rarely
+4@Vegetarian
+5@Vegan
+Of the food you buy, how much is wasted and thrown away?
 4
-1@The lion sleeps tonight
-2@In the jungle, the quiet jungle
-3@The lion sleeps tonight
-4@A-weema-weh
+1@None
+2@0%-10%
+3@10%-30%
+4@More than 30%
+What kind of vehicle do you travel in most often as driver or passenger?
+5
+1@Car
+2@Motorbike
+3@Bus
+4@Bike
+5@I walk
+How often do you take the bus?
+3
+1@1-2 times a week
+2@3-5 times a week
+3@everyday
+What kind of house do you live in?
+3
+1@Detached
+2@Semi detached
+3@Studio
+How many rooms does your house have?
+4
+1@1-3 rooms
+2@3-6 rooms
+3@6-9 rooms
+4@more than 10 rooms (impressive :) )
+How many people live in your house?
+6
+1@1
+2@2
+3@3
+4@4
+5@5
+6@more than 5
+How do you heat your home?
+5
+1@Gas
+2@Oil
+3@Electricity
+4@Wood
+5@Heatpump
+How warm do you keep your home in winter?
+4
+1@14-17 Celsius
+2@18-21 Celsius
+3@22-24 Celsius
+4@More than 24 Celsius
+In the last 12 months, have you bought any of these new household items? TV, laptop or fridge?
+2
+1@Yes
+2@No
+In a typical month, how much do you spend on clothes and footwear?
+4
+1@0 lei
+2@1-150 lei
+3@150-300 lei
+4@more than 300 lei
+How much do you spend on your pets an their food?
+4
+1@I don`t have a pet
+2@1-50 lei
+3@50 - 200 lei
+4@More than 200 lei
+In a typical month, how much do you spend on health?
+3
+1@0 - 50 lei
+2@50 -200 lei
+3@More than 200 lei
+In a typical month, how much do you spend on your hobbies? (sports, gym, cinema, books, entertainment, computer games, etc.)
+3
+1@0-50 lei
+2@50- 300 lei
+3@more than 300 lei
+Do you recycle food, paper, glass, plastic, etc.?
+2
+1@Yes
+2@No
